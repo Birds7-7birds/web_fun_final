@@ -18,11 +18,11 @@ for (let i = 1; i < 6; i++) {
 
 }
 
-var x = document.getElementById("displayed-img")
+var ximg = document.getElementById("displayed-img")
 
 function imgfunc() {
     sor = this.id
-    x.src = `images/${this.id}.jpg`
+    ximg.src = `images/${this.id}.jpg`
     console.log(this.id)
     if (document.getElementById("zform").style.display === "none"){
         document.getElementById("zform").style.display = "flex";
@@ -30,18 +30,19 @@ function imgfunc() {
 
 }
 
-var b = document.getElementById("BTN");
-b.addEventListener("click", BTNfnc);
+
+var butn = document.getElementById("BTN");
+butn.addEventListener("click", BTNfnc);
 
 function BTNfnc(){
-    var x = document.getElementById("displayed-img")
+    var ximg = document.getElementById("displayed-img")
     var y = document.getElementById("effect");
     vale = y.value
     y.value = ''
     if (vale == "blur"){
-        x.src = `images/${sor}B.jpg`
+        ximg.src = `images/${sor}B.jpg`
     } else {
-        alert(vale)
+        alert(`${vale} is not supported...only blur is`)
     }
 
 

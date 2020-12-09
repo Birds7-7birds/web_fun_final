@@ -4,7 +4,7 @@
 function myFunction() {
     document.getElementById("zform").style.display = "none";
 }
-var sor = 18
+var sor = ''
 
 for (let i = 1; i < 6; i++) {
     var img = document.createElement('img'); 

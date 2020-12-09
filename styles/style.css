@@ -14,6 +14,15 @@ body{
 form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+input{
+    width: auto;
+    margin: auto;
+}
+button{
+    width: auto;
+    margin: auto;
 }
 img{
     width: 100%;
@@ -21,8 +30,10 @@ img{
 /*over mobile size*/
 @media screen and (min-width: 640px) {
     form{
+        justify-content: center;
         display: flex;
         flex-direction: row;
         gap: 20px;
+
     }
 }
